@@ -1,0 +1,31 @@
+ALGORITHM Insertion_sort
+VAR
+   tab : ARRAY_OF INTEGER[10];
+   n : INTEGER
+   m : INTEGER
+BEGIN
+    PROCEDURE Insertion_sort(arr,n)
+    VAR
+    i, key, j :INTEGER.
+    BEGIN
+    FOR i FROM 0 TON-1 DO
+    key := arr[i]:
+    j=i-1;
+    WHILE (j>=0 && arr[j] > key) DO
+        arr[j + 1] := arr[j];
+        j := j- 1;
+         END_WHILE
+         arr[j + 1] = key;
+         END_FOR
+         END
+         PROCEDURE inserer(m,arr,n)
+         VAR
+         I:INTEGER;
+         BEGIN
+         FOR i FROM 0 TO n-1 DO
+             IF (m<arr[i]) THEN
+                 arr[i]=m;
+                 i=i+1;
+                 break;
+             END_IF
+         END_FOR
